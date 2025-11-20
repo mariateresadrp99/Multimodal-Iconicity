@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 """
-Unified script for computing CLIP-based reference alignment (CRA) between
-generated images and reference images, for both STATIC and DYNAMIC settings.
 
 Modes
 -----
@@ -25,17 +23,6 @@ Modes
          and ALL kept reference images.
        * Keep only generated images with CRA >= ic_tau.
        * Write one row per CRA-pass image to a CSV file.
-
-Common behavior
----------------
-- The script uses ST-CLIP (SentenceTransformers) as the primary image encoder,
-  with Hugging Face CLIP as a fallback.
-- Slugs are restricted to those appearing in a prompt CSV (slug column name
-  is configurable).
-- The output CSV is incremental and supports resume:
-  if a given generated image path is already present in the CSV, it is skipped.
-- All filesystem paths below are placeholders and must be adapted to the
-  local environment. No user- or institution-specific identifiers appear here.
 """
 
 import argparse
