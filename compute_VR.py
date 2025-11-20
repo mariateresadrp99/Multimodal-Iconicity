@@ -6,8 +6,7 @@
 Modes
 -----
 1) STATIC mode (mode = "static"):
-   - Each concept (slug) has a folder of reference images.
-   - Only the FIRST reference image in each folder is used.
+   - Each concept (slug) has a folder with a reference image.
    - For each model and slug:
        * Split the reference and each generated image into a regular grid
          of patches.
@@ -16,7 +15,6 @@ Modes
          any reference patch and aggregate:
              - vr_max  = maximum over all generated patches
              - vr_mean = mean of per-patch maxima
-             - vr_p90  = 90th percentile of per-patch maxima
        * Write one row per generated image to a CSV file.
 
 2) DYNAMIC mode (mode = "dynamic"):
@@ -27,7 +25,7 @@ Modes
            - Split into patches.
            - Embed all patches.
            - Compute per-patch maximum similarity to ANY reference patch.
-           - Aggregate as in STATIC: vr_max, vr_mean, vr_p90.
+           - Aggregate as in STATIC: vr_max, vr_mean
        * Write one row per generated image to a CSV file.
 
 """
