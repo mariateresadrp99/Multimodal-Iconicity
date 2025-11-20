@@ -67,17 +67,6 @@ Output includes:
 * P90 patch similarity
 * VR score per generated image
 
-## Output Files
-
-Each script produces:
-* A CSV file with results
-* A `.meta.json` file describing the parameters used
-
-**Example outputs:**
-* `results_cra_static.csv`
-* `results_cra_dynamic.csv`
-* `results_vr.csv`
-
 ## Dependencies
 
 Install required libraries:
