@@ -6,8 +6,7 @@
 Modes
 -----
 1) STATIC mode (mode = "static"):
-   - Each concept (slug) has a folder of reference images.
-   - Only the FIRST reference image in each folder is used as the reference.
+   - Each concept (slug) has a folder with a reference images.
    - For each model and slug:
        * Compute CRA as the cosine similarity between the first reference image
          and each generated image in the corresponding folder.
